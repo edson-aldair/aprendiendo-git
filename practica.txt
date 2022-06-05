@@ -1,2 +1,8 @@
 
 //COMANDOS GIT Y SUS DEFINICIONES
+
+git --version = para ver la version de git en la que nos encontramos
+git help      = para ver la ayuda de git( ver todos los comandos)
+git config --global user.name "edson mendoza ramirez" = en la configuracion de git guardamos nuestro nombre
+git config --global user.email "email@gmail.com" = en la configuracion de git guardamos nuestro correo
+git config --global -e = para ver todas las configuraciones globales que tenemos
