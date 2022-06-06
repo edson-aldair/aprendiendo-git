@@ -20,3 +20,5 @@ git log = para ver los log de nuestro repositorio
 git log --oneline = ver los log de manera corta
 git diff = nos muestra los cambios que se hicieron al repositorio(solo se muestra cuando los cambios no se han subido al stage)
 git diff --staged = nos muestra los cambios que se hicieron al repositorio(muestra cambios que se subieron al stage)
+git commit --amend -m "nuevo nombre del commit" = cambia el nombre del mensaje del ultimo commit
+
