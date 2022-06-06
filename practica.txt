@@ -29,4 +29,6 @@ git reset --soft HASH = elimina los commits posteriores al hash, los cambios de 
 git reset --mixed HASH = elimina los commits posteriores al hash, los cambios de los commits posteriores se matienen(no los borra) pero estos no se encuentran en el stage.
 git reset --hard HASH = elimina los commits posteriores al hash, elimina los cambios de los commits posteriores(es decir no se encuentran ni en el stage ni en el directorio de trabajo).
 git reflog = es una referencia de todo lo que ha sucedido cronologicamente
-
+git mv viejo-nombre.md nuevo-nombre.md = para cambiar el nombre de nuestro archivo
+git rm nombre-archivo.md = para eliminar el archivo
+git reset --hard = reconstruye tu proyecto a como estaba en el ultimo commit(parecido al git checkout -- .)
