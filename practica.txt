@@ -23,4 +23,9 @@ git config --global alias.s "comando" = crear un alias para el comando seleccion
 git diff = nos muestra los cambios que se hicieron al repositorio(solo se muestra cuando los cambios no se han subido al stage)
 git diff --staged = nos muestra los cambios que se hicieron al repositorio(muestra cambios que se subieron al stage)
 git commit --amend -m "nuevo nombre del commit" = cambia el nombre del mensaje del ultimo commit
-git reset --soft HEAD^ = mueveme al commit antes del HEAD
+git reset --soft HEAD^ = mueveme al commit antes del HEAD y elimina los commits posteriores
+git commit --amend = entramos al modo de edición para cambiar el mensaje del umtimo commitgit 
+git reset --soft HASH = elimina los commits posteriores al hash, los cambios de los commits posteriores los mantiene(no los borra) y estos los pone en el stage.
+git reset --mixed HASH = elimina los commits posteriores al hash, los cambios de los commits posteriores se matienen(no los borra) pero estos no se encuentran en el stage.
+git reset --hard HASH = elimina los commits posteriores al hash, elimina los cambios de los commits posteriores(es decir no se encuentran ni en el stage ni en el directorio de trabajo).
+
