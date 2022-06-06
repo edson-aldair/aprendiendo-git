@@ -17,3 +17,4 @@ git branch = nos dice en que rama nos encontramos trabajando
 git branch -m master main = cambiamos el nombre de la rama master por main en el repositorio actual
 git config --global init.defaultBranch main = en la configuracion global de git le decimos que cuando cree un nuevo repositorio lo inicialicemos el nombre de la rama con main 
 git log = para ver los log de nuestro repositorio
+git log --oneline = ver los log de manera corta
