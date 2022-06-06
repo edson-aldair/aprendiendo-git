@@ -10,6 +10,7 @@ git init = para crear o inicializar nuestro repositorio(proyecto)
 git status = para ver el estado actual de nuestro repositorio
 git status --short = para ver el estado actual de nuestro repositorio de manera corta
 [git add . | git add nombre-archivo| git add nombre-carpeta/] = para subir al stage los archivos
+git reset nombre-archivo = baja del stage el archivo seleccionado
 git commit -m "mensaje del commit" = para hacer una fotografia en el momento de nuestro repositorio
 git commit -am "mensaje del commit" = sube al stage los cambios y hace una fotografia en el momento de nuestro repositorio, solo funciona si le estamos dando seguimiento al archivo
 git checkout -- . = para reconstruir nuestro proyecto a como estaba en el ultimo commit(siempre y cuando se le esté dando seguimiento)
@@ -18,7 +19,9 @@ git branch -m master main = cambiamos el nombre de la rama master por main en el
 git config --global init.defaultBranch main = en la configuracion global de git le decimos que cuando cree un nuevo repositorio lo inicialicemos el nombre de la rama con main 
 git log = para ver los log de nuestro repositorio
 git log --oneline = ver los log de manera corta
+git config --global alias.s "comando" = crear un alias para el comando seleccionado
 git diff = nos muestra los cambios que se hicieron al repositorio(solo se muestra cuando los cambios no se han subido al stage)
 git diff --staged = nos muestra los cambios que se hicieron al repositorio(muestra cambios que se subieron al stage)
 git commit --amend -m "nuevo nombre del commit" = cambia el nombre del mensaje del ultimo commit
+git reset --soft HEAD^ = mueveme al commit antes del HEAD
 
