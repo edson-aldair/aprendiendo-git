@@ -18,3 +18,5 @@ git branch -m master main = cambiamos el nombre de la rama master por main en el
 git config --global init.defaultBranch main = en la configuracion global de git le decimos que cuando cree un nuevo repositorio lo inicialicemos el nombre de la rama con main 
 git log = para ver los log de nuestro repositorio
 git log --oneline = ver los log de manera corta
+git diff = nos muestra los cambios que se hicieron al repositorio(solo se muestra cuando los cambios no se han subido al stage)
+git diff --staged = nos muestra los cambios que se hicieron al repositorio(muestra cambios que se subieron al stage)
