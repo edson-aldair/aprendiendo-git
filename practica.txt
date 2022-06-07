@@ -32,3 +32,8 @@ git reflog = es una referencia de todo lo que ha sucedido cronologicamente
 git mv viejo-nombre.md nuevo-nombre.md = para cambiar el nombre de nuestro archivo
 git rm nombre-archivo.md = para eliminar el archivo
 git reset --hard = reconstruye tu proyecto a como estaba en el ultimo commit(parecido al git checkout -- .)
+
+//hablando de branch o ramas
+fast-forward: git detecta que no hay ningun cambio en la rama principal, entonces añade la otra rama de forma normal.
+unión automatica: git detecta que hubo cambios en la rama principal, y lo añade al final.
+uniónmanual: donde git no puede resolver de forma automatica, si hicimos modificaciones en la rama2 que afecta las mismas lineas en los archivos en la rama principal
