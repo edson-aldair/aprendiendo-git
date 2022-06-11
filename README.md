@@ -16,4 +16,4 @@ hard =>
         *deshace los cambios que tengas en tus archivos (working directory)
 
 ## ojo
-sigue estudiando
+sigue estudiando git
