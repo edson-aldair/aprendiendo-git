@@ -55,3 +55,9 @@ git tag -a v1.0.0 -m "mensaje": crea un tag con un nombre de versionamiento y un
 git tag -a v1.0.0 HASH -m "mensaje": creamos un tag con un nombre de versionamiento y un mensaje de referencia, y este apunta a un hash en especifico
 git show nombre-tag: muestra toda la informacion del tag en especifico
 
+//hablando del stash
+git stash: guarda los cambios en un directorio de trabajo sucio(boveda) desde el ultimo commit, ahora el stash no es necesario cuando estamos trabajando en una rama diferente al main
+
+git stash: almacena en un stash(boveda) los cambios que no han sido guardados(no se ha subido al stage ni hecho commit)
+git stash list: para ver la lista de stash
+git stash pop: para traer el ultimo stash a nuestra rama y de pasada elimina ese stash
