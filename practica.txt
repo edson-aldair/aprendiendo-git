@@ -44,3 +44,14 @@ git merge nombre-rama: hacemos la union de la rama hacia otra(principal)
 git branch -d nombre-rama: eliminamos la rama
 git branch -d nombre-rama -f: eliminamosla rama de manera forzosa
 git checkout -b nombre-rama: creamos una rama y nos movemos hacia ella 
+
+//hablando de etiquetas o tag
+tag: son una referencia a un commit en especifico y a todo el estado del proyecto en ese punto en especifico
+
+git tag nombre-tag: creamos un tag apuntando al ultimo commit
+git tag: para ver todos los tag
+git tag -d nombre-tag: para eliminar el tag especifico 
+git tag -a v1.0.0 -m "mensaje": crea un tag con un nombre de versionamiento y un mensaje de referencia, ademas de apuntar al ultimo commit
+git tag -a v1.0.0 HASH -m "mensaje": creamos un tag con un nombre de versionamiento y un mensaje de referencia, y este apunta a un hash en especifico
+git show nombre-tag: muestra toda la informacion del tag en especifico
+
