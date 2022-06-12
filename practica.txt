@@ -37,3 +37,10 @@ git reset --hard = reconstruye tu proyecto a como estaba en el ultimo commit(par
 fast-forward: git detecta que no hay ningun cambio en la rama principal, entonces añade la otra rama de forma normal.
 unión automatica: git detecta que hubo cambios en la rama principal, y lo añade al final.
 uniónmanual: donde git no puede resolver de forma automatica, si hicimos modificaciones en la rama2 que afecta las mismas lineas en los archivos en la rama principal
+
+git branch nombre-rama: crear una rama
+git checkout nombre-rama: nos movemos a la rama
+git merge nombre-rama: hacemos la union de la rama hacia otra(principal)
+git branch -d nombre-rama: eliminamos la rama
+git branch -d nombre-rama -f: eliminamosla rama de manera forzosa
+git checkout -b nombre-rama: creamos una rama y nos movemos hacia ella 
