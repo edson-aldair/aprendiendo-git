@@ -61,5 +61,10 @@ git stash: guarda los cambios en un directorio de trabajo sucio(boveda) desde el
 git stash: almacena en un stash(boveda) los cambios que no han sido guardados(no se ha subido al stage ni hecho commit)
 git stash list: para ver la lista de stash
 git stash pop: para traer el ultimo stash a nuestra rama y de pasada elimina ese stash
-
-aqui agregando una nueva caracteristica de mi proyecto
+git stash clear: borra todo los stash 
+git stash apply HASH: te trae un stash en especifico segun su hash o identificador
+git stash drop: borra el ultimo stash
+git stash drop HASH: borra un stash en especifico segun su hash o identificador
+git stash show HASH: ver informacion de un stash en especifico(no da casi nada de informacion)
+git stash save "nombre al stash": almacena en un stash con un nombre en especifico de los cambios que no han sido guardados
+git stash list --stat: para ver la lista de stash pero con informacion
