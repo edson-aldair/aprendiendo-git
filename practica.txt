@@ -68,3 +68,8 @@ git stash drop HASH: borra un stash en especifico segun su hash o identificador
 git stash show HASH: ver informacion de un stash en especifico(no da casi nada de informacion)
 git stash save "nombre al stash": almacena en un stash con un nombre en especifico de los cambios que no han sido guardados
 git stash list --stat: para ver la lista de stash pero con informacion
+
+//hablando del rebase
+git rebase: nos permite ordenar los commits, corregir mensajes de los commits, unir commits, separar commits
+
+git rebase master: mueve los commits de la rama secundaria un paso adelante del ultimo commit de la rama main
