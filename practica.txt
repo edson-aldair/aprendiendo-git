@@ -72,4 +72,4 @@ git stash list --stat: para ver la lista de stash pero con informacion
 //hablando del rebase
 git rebase: nos permite ordenar los commits, corregir mensajes de los commits, unir commits, separar commits
 
-git rebase master: mueve los commits de la rama secundaria un paso adelante del ultimo commit de la rama main
+git rebase main: mueve los commits de la rama secundaria un paso adelante del ultimo commit de la rama main
