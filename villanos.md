@@ -5,7 +5,8 @@
 3. villano 3
 4. villano 4
 5. villano 5
-
+6. villano 6
+7. villano 7
 # notas:
 
  creando mi nota en villanos
