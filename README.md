@@ -16,4 +16,4 @@ hard =>
         *deshace los cambios que tengas en tus archivos (working directory)
 
 ## ojo
-sigue estudiando git(sistema de control de versiones)
+sigue estudiando git(sistema de control de versiones) para darle seguimiento a tu proyecto
