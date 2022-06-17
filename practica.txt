@@ -73,3 +73,22 @@ git stash list --stat: para ver la lista de stash pero con informacion
 git rebase: nos permite ordenar los commits, corregir mensajes de los commits, unir commits, separar commits
 
 git rebase main: mueve los commits de la rama secundaria un paso adelante del ultimo commit de la rama main
+git rebase -i HEAD~numeroUltimosCommits: selecciona el numero de ultimos commits para pasarlo al rebase interactivo
+ejm: git rebase -i HEAD~3
+     git reabse -i HASH
+
+git checkout -- nombreArchivo: nos permite reconstruir el archivo a como estaba antes de realizar una modificación
+git reset HEAD^: es lo mismo que git reset --mixed HEAD^
+git rebase --continue: nos permite salir del rebase interactivo cuando hacemos un edit
+
+//hablando del remote
+git remote add origin URL-GITHUB:nos permite agregar un origen remoto
+*add= nos permite agregar un nuevo remote
+*origin= es el nombre que nosotros le queremos dar a ese repositorio(remote)
+*URL-GITHUB= es la url donde se encuentra nuestro repositorio
+
+git remote -v: cuando queremos revisar los remotos o las fuentes remotas de nuestro repositorio
+git push -u origin main:
+*origin= nombre del repositorio(remote)
+*main=rama que deseamos enviar
+*-u= nos ayuda a que la proxima vez que queramos hacer push, no necesitemos especificar la rama 
