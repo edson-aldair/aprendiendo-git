@@ -17,3 +17,5 @@ hard =>
 
 ## ojo
 sigue estudiando git(sistema de control de versiones) para darle seguimiento a tu proyecto
+### cambios desde github
+esto es una modificacion desde mi repositorio remoto(github)
