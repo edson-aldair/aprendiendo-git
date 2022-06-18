@@ -94,4 +94,5 @@ git push -u origin main:
 *-u= nos ayuda a que la proxima vez que queramos hacer push, no necesitemos especificar la rama 
 git push: para subir nuestros cambios a github(repositorio remoto)
 git push --tags: nos permite subir nuestros tags(etiquetas)
-git pull: traer los datos o cambios que se encuentran en nuestro repositorio remoto y actualizar al instante el repositorio local para reflejar ese contenido
+git pull origin main
+git pull: traer los datos o cambios que se encuentran en nuestro repositorio remoto y actualizar al instante el repositorio local para reflejar ese contenido o cambio
