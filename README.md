@@ -19,3 +19,4 @@ hard =>
 sigue estudiando git(sistema de control de versiones) para darle seguimiento a tu proyecto
 ### cambios desde mi repositorio remoto(github)
 esto es una adicion desde mi repositorio remoto
+esto es una modificacion desde mi repositorio local
