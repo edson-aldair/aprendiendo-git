@@ -96,3 +96,5 @@ git push: para subir nuestros cambios a github(repositorio remoto)
 git push --tags: nos permite subir nuestros tags(etiquetas)
 git pull origin main
 git pull: traer los datos o cambios que se encuentran en nuestro repositorio remoto y actualizar al instante el repositorio local para reflejar ese contenido o cambio
+
+//pull request: es una rama que se desprendió en cierto punto del tiempo de la rama principal, entonces cuando queremos unirlo podemos hacer un pull request, la idea del pull request es que no solo la integre, la idea es que nos sirva para hacer un analisis previo a un merge
