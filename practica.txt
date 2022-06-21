@@ -3,8 +3,8 @@
 
 git --version = para ver la version de git en la que nos encontramos
 git help      = para ver la ayuda de git( ver todos los comandos)
-git config --global user.name "edson mendoza ramirez" = en la configuracion de git guardamos nuestro nombre
-git config --global user.email "email@gmail.com" = en la configuracion de git guardamos nuestro correo
+git config --global user.name "edson mendoza ramirez" = en la configuracion global de git guardamos nuestro nombre
+git config --global user.email "email@gmail.com" = en la configuracion global de git guardamos nuestro correo
 git config --global -e = para ver todas las configuraciones globales que tenemos
 git init = para crear o inicializar nuestro repositorio(proyecto)
 git status = para ver el estado actual de nuestro repositorio
@@ -23,7 +23,7 @@ git config --global alias.s "comando" = crear un alias para el comando seleccion
 git diff = nos muestra los cambios que se hicieron al repositorio(solo se muestra cuando los cambios no se han subido al stage)
 git diff --staged = nos muestra los cambios que se hicieron al repositorio(muestra cambios que se subieron al stage)
 git commit --amend -m "nuevo nombre del commit" = cambia el nombre del mensaje del ultimo commit
-git reset --soft HEAD^ = mueveme al commit antes del HEAD y elimina los commits posteriores
+git reset --soft HEAD^ = mueveme un commit antes del HEAD y elimina los commits posteriores
 git commit --amend = entramos al modo de edición para cambiar el mensaje del umtimo commitgit 
 git reset --soft HASH = elimina los commits posteriores al hash, los cambios de los commits posteriores los mantiene(no los borra) y estos los pone en el stage.
 git reset --mixed HASH = elimina los commits posteriores al hash, los cambios de los commits posteriores se matienen(no los borra) pero estos no se encuentran en el stage.
@@ -35,14 +35,14 @@ git reset --hard = reconstruye tu proyecto a como estaba en el ultimo commit(par
 
 //hablando de branch o ramas
 fast-forward: git detecta que no hay ningun cambio en la rama principal, entonces añade la otra rama de forma normal.
-unión automatica: git detecta que hubo cambios en la rama principal, y lo añade al final.
-uniónmanual: donde git no puede resolver de forma automatica, si hicimos modificaciones en la rama2 que afecta las mismas lineas en los archivos en la rama principal
+unión automatica: git detecta que hubo cambios en la rama principal pero no afecta con respecto al contenido, y lo añade.
+unión manual: donde git no puede resolver de forma automatica, si hicimos modificaciones en la rama2 que afecta las mismas lineas en los archivos en la rama principal
 
 git branch nombre-rama: crear una rama
 git checkout nombre-rama: nos movemos a la rama
-git merge nombre-rama: hacemos la union de la rama hacia otra(principal)
+git merge nombre-rama: hacemos la union de la rama hacia otra(principal) - te crea un nuevo commit uniendo las ramas
 git branch -d nombre-rama: eliminamos la rama
-git branch -d nombre-rama -f: eliminamosla rama de manera forzosa
+git branch -d nombre-rama -f: eliminamos la rama de manera forzosa
 git checkout -b nombre-rama: creamos una rama y nos movemos hacia ella 
 
 //hablando de etiquetas o tag
@@ -72,12 +72,12 @@ git stash list --stat: para ver la lista de stash pero con informacion
 //hablando del rebase
 git rebase: nos permite ordenar los commits, corregir mensajes de los commits, unir commits, separar commits
 
-git rebase main: mueve los commits de la rama secundaria un paso adelante del ultimo commit de la rama main
+git rebase main: mueve los commits de la rama secundaria un paso adelante del ultimo commit de la rama main( actualiza el punto de separacion de la rama)
 git rebase -i HEAD~numeroUltimosCommits: selecciona el numero de ultimos commits para pasarlo al rebase interactivo
 ejm: git rebase -i HEAD~3
      git reabse -i HASH
 
-git checkout -- nombreArchivo: nos permite reconstruir el archivo a como estaba antes de realizar una modificación
+git checkout -- nombreArchivo: nos permite reconstruir el archivo a como estaba antes de realizar una modificación(revertir cambios a como estaba originalmente)
 git reset HEAD^: es lo mismo que git reset --mixed HEAD^
 git rebase --continue: nos permite salir del rebase interactivo cuando hacemos un edit
 
@@ -93,8 +93,10 @@ git push -u origin main:
 *main=rama que deseamos enviar
 *-u= nos ayuda a que la proxima vez que queramos hacer push, no necesitemos especificar la rama 
 git push: para subir nuestros cambios a github(repositorio remoto)
-git push --tags: nos permite subir nuestros tags(etiquetas)
+git push --tags: nos permite subir nuestros tags(etiquetas) a nuestro repositorio remoto
 git pull origin main
-git pull: traer los datos o cambios que se encuentran en nuestro repositorio remoto y actualizar al instante el repositorio local para reflejar ese contenido o cambio
+git pull: sirve para traer los datos o cambios que se encuentran en nuestro repositorio remoto y actualizar al instante el repositorio local para reflejar ese contenido o cambio
 
-//pull request: es una rama que se desprendió en cierto punto del tiempo de la rama principal, entonces cuando queremos unirlo podemos hacer un pull request, la idea del pull request es que no solo la integre, la idea es que nos sirva para hacer un analisis previo a un merge
+//pull request= es una rama que se desprendió en cierto punto del tiempo de la rama principal, entonces cuando queremos unirlo podemos hacer un pull request, la idea del pull request es que no solo la integre, la idea es que nos sirva para hacer un analisis previo a un merge
+
+git fetch: le dice a tu git local que recupere la última información de los metadatos del original (aunque no hace ninguna transferencia de archivos. Es más bien comprobar si hay algún cambio disponible).
