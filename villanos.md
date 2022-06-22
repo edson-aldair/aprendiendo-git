@@ -8,6 +8,3 @@
 6. villano 6
 7. villano 7
 8. villano 8
-# notas:
-
- creando mi nota en villanos
